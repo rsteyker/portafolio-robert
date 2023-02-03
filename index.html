@@ -1,0 +1,493 @@
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="images/programacion.png">
+    <title>Portfolio - Robert</title>
+    <!--CSS STYLE-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--Menú encabezado-->
+    <div class="contenido__header">
+        <header>
+            <div class="logo">
+                <a href="#">PROGRAMER</a>
+                <p class="span"> ROBERT - MARCHINO - LÓPEZ</p>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccinar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccinar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccinar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccinar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccinar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccinar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav__responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECTION INICIO-->
+    <section id="inicio" class="inicio">
+        <div class="contenido__banner">
+            <div class="contenido__imagen">
+                <img src="images/logo/perfil.png" alt="Mi perfil">
+            </div>
+            <h1>Robert Marchino</h1>
+            <h2>Ingeniero de Sistemas - Experto en Front End Developer</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/robert-marchino-l%C3%B3pez-04916910b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/RMARCHINO95/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.instagram.com/rmarchino95/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://github.com/rsteyker" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                <!-- <a href="#"><i class="fa-solid fa-square-rss"></i></a> -->
+            </div>
+        </div>
+    </section>
+
+    <!--SECTION SOBRE MÍ-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido__section">
+            <h2>SOBRE MÍ</h2>
+            <p><span>Hola, soy Robert Marchino.</span> Estudiante de la carrera de Ingeniería de Sistemas e Informática de la Universidad Autónoma del Perú, perteneciente aldécimo superior; con conocimientos sólidos en Marketing Digital, Matemática, Estadística, análisis de Datos, con habilidades en programación (Java Script, PHP, Python y React, etc.) y Maquetación utilizando lenguajes de marcado HTML5, CSS3 y Bootstrap. Manejo de base de datos (SQL SERVER), con gran interés de aprender y desarrollar mi carrera profesional en el área de Desarrollo Web y Análisis de Datos. Con gran aspiración de liderar proyectos Innovadores de Desarrollo Web Full-stack y Analítica.</p>
+            <div class="fila">
+                <!--Datos personales-->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            07-06-1995
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +51 972487645
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            rmarchino@autonoma.edu.pe
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Mz.07 Lte.21 San Juan de Miraflores
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FRELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+                <!--Intereses-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor__intereses">
+                        <div class="intereses">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>FUTBOL</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-film"></i>
+                            <span>CINE</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJE</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!--SECTION SKILLS-->
+    <section class="skills" id="skills">
+        <div class="contenido__section">
+            <h2>HABILIDADES</h2>
+            <div class="fila">
+                <!--Técnica Skills-->
+                <div class="col">
+                    <h3>Habilidades Informáticas</h3>
+                    <div class="skill">
+                        <span>HTML5 & CSS</span>
+                        <div class="barra__skills">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Power BI</span>
+                        <div class="barra__skills">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Javascrip</span>
+                        <div class="barra__skills">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="barra__skills">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PHP</span>
+                        <div class="barra__skills">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra__skills">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL Server</span>
+                        <div class="barra__skills">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra__skills">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Habilidades Blandas-->
+                <div class="col">
+                    <h3>Habilidades Blandas</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra__skills">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra__skills">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra__skills">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra__skills">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Innovación</span>
+                        <div class="barra__skills">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Liderazgo de Equipo</span>
+                        <div class="barra__skills">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Disciplina</span>
+                        <div class="barra__skills">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resolución de problemas</span>
+                        <div class="barra__skills">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--SECTION CURRICULUM-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido__section">
+            <h2>CURRICULUM</h2>
+            <div class="fila">
+                <!--Formación académica-->
+                <div class="col izquierda">
+                    <h3>Formación Académica</h3>
+                    <div class="item izq">
+                        <p class="study">Etudiante</p>
+                        <h4>Programación Web Full-Stack y Ciencias de Computación</h4>
+                        <span class="fecha">ene. 2023 - jun. 2023</span>
+                        <span class="casa">Academlo</span>
+                        <p>Adquisición de conocimientos en tecnologías más demandadas en el mundo del desarrollo web Front End y Full-Stack, tales como, Javascript, React, SQL Server HTML5 y CSS3.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <p class="study">Etudiante</p>
+                        <h4>Ingeniería de Sistemas e Informática</h4>
+                        <span class="fecha">2019 - 2023</span>
+                        <span class="casa">Universidad Autónoma del Perú</span>
+                        <p>Adquisición de conocimientos a nivel profesional, en la carrera de Ingeniería de Sistemas e Informática.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Egresado, Administración y gestión de empresas</h4>
+                        <span class="fecha">2013 - 2015</span>
+                        <span class="casa">Universidad de Ciencias y Humanidades</span>
+                        <p>Técnico en Administración de Empresas, con capacidades altamente desarroladas en Estadística, Analítica, Planeación estratégica,ERP y CRM.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--Estudios Capacitaciones-->
+                <div class="col centro">
+                    <h3>Estudios Complementarios</h3>
+                    <div class="item cent">
+                        <h4>MASTER DAX CON POWER BI</h4>
+                        <span class="fecha">jun. 2021</span>
+                        <span class="casa">Cedinfo</span>
+                        <p>Especialista en la extracción, transformación de datos y creación de reportes estadísticos Gerenciales. </p>
+                        <div class="conectord conector__der">
+                            <div class="circulod circulo__der"></div>
+                        </div>
+                    </div>
+                    <div class="item cent">
+                        <h4>DATA SCIENCE FOR BUSINESS</h4>
+                        <span class="fecha">oct. 2022</span>
+                        <span class="casa">ADDC PERÚ</span>
+                        <p>Experto en Python, SQL, Fundamentos de matemáticas y estadística, ingesta y almacenamiento de datos, tratamiento y análisis de datos, machine y deep learning y herramientas de visualización de datos como Tableau, Carto o Power BI.</p>
+                        <div class="conectord conector__der">
+                            <div class="circulod circulo__der"></div>
+                        </div>
+                    </div>
+                    <div class="item cent">
+                        <h4>BUSINESS INTELLIGENCE CON TABLEAU</h4>
+                        <span class="fecha">ago. 2022</span>
+                        <span class="casa">Nextech</span>
+                        <p>Experto en Análisis de Datos, Áreas Growth, Investigación de mercados y Data Sciencie.</p>
+                        <div class="conectord conector__der">
+                            <div class="circulod circulo__der"></div>
+                        </div>
+                    </div>
+                    <div class="item cent">
+                        <h4>Especialista en SQL Server 2019 Expert</h4>
+                        <span class="fecha">may. 2021</span>
+                        <span class="casa">Nextech</span>
+                        <p>Experto en la creación de base de datos relacional, experto en consultas SQL avanzadas para generar reportes e informes para la toma decisiones </p>
+                        <div class="conectord conector__der">
+                            <div class="circulod circulo__der"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--Experiencia Laboral-->
+                <div class="col derecha">
+                    <h3>Experiencia Laboral</h3>
+                    <div class="item der">
+                        <h4>Desarrollador Web Full-Stack (junior)</h4>
+                        <span class="casa">LUTEM FIRST CAPITAL</span>
+                        <span class="fecha">dic. 2021 - Actualuidad</span>
+                        <p>- Responsable de organizar las ideas del Backoffice para producir maquetas/prototipos de diseño usando Adobe XD, Adobe Photoshop y Adobe Illustrator, mejorando la experiencia del usuario, mejorando la interacción del sitio web</p><br>
+                        <p>- Desarrollo del sistema web con PHP, Javascript, AJAX y Maquetación utilizando lenguajes de marcado (HTML5, CSS3 y Bootstrap con patrones de diseño de MVC para realizar operaciones de compra y venta de tipo de cambio.</p> <br>
+                        <p>- Encargado de capacitar los personales de la empresa en el uso adecuado de las herramientas del sistema web tras el despliegue de los proyectos, llevando a cabo reuniones con el fin de garantizar el correcto uso del sistema y maximizar la productividad.</p> <br>
+                        <p>- Responsable de la implementación del base de datos utilizando el gestor de base de datos MySQL, y el editor MySQL Workbench (casos de uso del negocio, Diagramas de entidad relación modelo conceptual, lógico y físico), para el sistema web.</p>
+                        <div class="conectorder">
+                            <div class="circuloder"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Analista de Datos</h4>
+                        <span class="casa">LUTEM FIRST CAPITAL</span>
+                        <span class="fecha">jul. 2021 - nov. 2021</span>
+                        <p>Desarrollo de dashboard gerencial con Power BI y Excel, para el monitoreo de utilidades de los traders.</p>
+                        <div class="conectorder">
+                            <div class="circuloder"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCTION PORTAFOLIO-->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido__section">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img loading="lazy" src="images/portafolio/web-design.jpg" alt="Diseño web">
+                    <div class="overlay">
+                        <h3>Diseño Web</h3>
+                        <p>Maquetación</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img loading="lazy" src="images/portafolio/desarrolloWeb.jpg" alt="Diseño web">
+                    <div class="overlay">
+                        <h3>Desarrollo Web</h3>
+                        <p>Full-Stack</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img loading="lazy" src="images/portafolio/basedeDatos.jpeg" alt="Diseño web">
+                    <div class="overlay">
+                        <h3>Administrador de Base de Datos</h3>
+                        <p>Creación de Base de Datos</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img loading="lazy" src="images/portafolio/seo.jpg" alt="Diseño web">
+                    <div class="overlay">
+                        <h3>SEO</h3>
+                        <p>Posicionamiento en la Búsqueda</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img loading="lazy" src="images/portafolio/analisisDatos.png" alt="Diseño web">
+                    <div class="overlay">
+                        <h3>Analisis de Datos</h3>
+                        <p>Power BI y Tableau</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img loading="lazy" src="images/portafolio/dashboard.jpeg" alt="Diseño web">
+                    <div class="overlay">
+                        <h3>Dashboard</h3>
+                        <p>Creación de Dashboard</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--CONTACTO SECTION-->
+    <section id="contacto" class="contacto">
+        <div class="contenido__section">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!--Formulario-->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="number" placeholder="Número telefónico">
+                    <input type="email" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!--Mapa--> 
+                <div class="col">
+                    <img src="images/ubicacion2.png" alt="Ubicación">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Perú - Lima, San Juan de Miraflores
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: +51 972487645
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: rmarchino95@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/robert-marchino-l%C3%B3pez-04916910b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/RMARCHINO95/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com/rmarchino95/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://github.com/rsteyker" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+            <!-- <a href="#"><i class="fa-solid fa-square-rss"></i></a> -->
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+  </html>
