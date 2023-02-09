@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;200;300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;200;300;400;600;700;800&display=swap');
 
 :root{
     --negroClaro: #151515;
@@ -11,6 +11,8 @@
 
     --fuenteHeading: 'Work Sans';
     --fuenteLogo: 'Rightteous';
+
+    --button-shadow: 0px 3px 10px #1cb698;
 }
 
 *{
@@ -62,10 +64,11 @@ html{
 
 .contenido__header header nav ul li a {
     text-align: none;
+    font-weight: 700 ;
     color: var(--colorBlanco);
     margin: 0 15px;
     padding: 3px;
-    transition: .5s;
+    transition: color .5s;
     width: 100%;
     height: auto;
     border-radius: 3px;
@@ -73,9 +76,9 @@ html{
 }
 
 .contenido__header header nav ul li a:hover{
-    background-color: var(--colorAmarillo);
-    color: var(--colorBlanco);
-    transition: background-color .5s; 
+    color: var(--colorAmarillo);
+    /* color: var(--colorBlanco);
+    transition: background-color .5s;  */
 }
 
 .nav__responsive{
@@ -97,7 +100,8 @@ html{
     color: var(--colorBlanco);
     display: flex;
     align-items: center;
-    margin-top: 95px;
+    /* padding: 80px 20px; */
+     margin-top: 95px; 
 }
 .inicio .contenido__banner{
     padding: 20px;
@@ -147,7 +151,7 @@ html{
 .sobremi{
     background-color: var(--colorNegroClaro);
     color: var(--colorBlanco);
-    padding: 50px 20px;
+    padding: 80px 20px;
 }
 .sobremi .contenido__section{
     max-width: 1100px;
@@ -254,7 +258,7 @@ html{
 .skills{
     background-color: var(--negroClaro);
     color: var(--colorBlanco);
-    padding: 50px 20px;
+    padding: 80px 20px;
 }
 .skills .contenido__section{
     max-width: 1100px;
@@ -267,202 +271,60 @@ html{
     padding: 20px 0;
     color: var(--colorAmarillo);
 }
-.skills .fila{
-    display: flex;
-}
-.skills .fila .col{
-    width: 50%;
-    padding: 0 20px;
-}
-.skills .fila .col h3{
-    font-size: 28px;
-    font-family: var(--fuenteLogo);
-    margin-bottom: 25px;
+
+.about__skills{
+    margin: 2.5rem 0;
 }
 
-.skills .skill > span{
-    font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
+.about__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+    gap: 2rem;
 }
-.skills .skill .barra__skills{
-    height: 8px;
-    width: 80%;
-    background-color: var(--azulClaro);
-    position: relative;
-    margin-bottom: 30px;
+
+.about__card {
+    background-color: var(--colorNegroClaro);
+    padding: 4rem 2rem 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px  black;
 }
-.skills .skill .progreso{
-    background-color: var(--colorLogo);
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 8px;
+
+.about__card i {
+    padding: 12px;
+    font-size: 2rem;
+    color: var(--colorAmarillo);
+    cursor: pointer;
 }
-.skills .skill .barra__skills span{
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    background-color: var(--colorLogo);
-    border-radius: 50px;
-    line-height: 40px;
+
+.about__tags-title{
     text-align: center;
-    top: -17px;
-    right: -15px;
-    font-size: 14px;
+    font-family: var(--fuenteHeading);
+    font-size: 2rem;
+    color: var(--colorAmarillo);
+    margin-top: 10px;
+    text-transform: uppercase;
 }
 
-/* KEYFRAMS - HABILIDADES INFORMÁTICAS*/
-.skills .skill .htmlcss{
-    width: 0%;
-    animation:2s htmlcss forwards;
-}
-@keyframes htmlcss {
-    0%{width: 0%;}
-    100%{width: 99%;}
+.about__tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-.skills .skill .powerbi{
-    width: 0%;
-    animation:2s powerbi forwards;
-}
-@keyframes powerbi {
-    0%{width: 0%;}
-    100%{width: 100%;}
-}
-
-.skills .skill .javascript{
-    width: 0%;
-    animation: 2% javascript forwards;
-}
-@keyframes javascript{
-    0%{width: 0%;}
-    100%{width: 90%;}
-}
-
-.skills .skill .react{
-    width: 0%;
-    animation: 2% react forwards;
-}
-@keyframes react{
-    0%{width: 0%;}
-    100%{width: 85%;}
-}
-
-.skills .skill .php{
-    width: 0%;
-    animation: 2% php forwards;
-}
-@keyframes php{
-    0%{width: 0%;}
-    100%{width: 75%;}
-}
-
-.skills .skill .python{
-    width: 0%;
-    animation: 2% python forwards;
-}
-@keyframes python{
-    0%{width: 0%;}
-    100%{width: 75%;}
-}
-
-.skills .skill .sqlserver{
-    width: 0%;
-    animation: 2% sqlserver forwards;
-}
-@keyframes sqlserver{
-    0%{width: 0%;}
-    100%{width: 80%;}
-}
-
-.skills .skill .photoshop{
-    width: 0%;
-    animation: 2% photoshop forwards;
-}
-@keyframes photoshop{
-    0%{width: 0%;}
-    100%{width: 95%;}
-}
-
-/* HABILIDADES BLANDAS */
-.skills .skill .comunicacion{
-    width: 0%;
-    animation: 2% comunicacion forwards;
-}
-@keyframes comunicacion{
-    0%{width: 0%;}
-    100%{width: 90%;}
-}
-
-.skills .skill .trabajoequipo{
-    width: 0%;
-    animation: 2% trabajoequipo forwards;
-}
-@keyframes trabajoequipo{
-    0%{width: 0%;}
-    100%{width: 70%;}
-}
-
-.skills .skill .creatividad{
-    width: 0%;
-    animation: 2% creatividad forwards;
-}
-@keyframes creatividad{
-    0%{width: 0%;}
-    100%{width: 99%;}
-}
-
-.skills .skill .dedicacion{
-    width: 0%;
-    animation: 2% dedicacion forwards;
-}
-@keyframes dedicacion{
-    0%{width: 0%;}
-    100%{width: 65%;}
-}
-
-.skills .skill .innovacion{
-    width: 0%;
-    animation: 2% innovacion forwards;
-}
-@keyframes innovacion{
-    0%{width: 0%;}
-    100%{width: 75%;}
-}
-
-.skills .skill .liderazgoequipo{
-    width: 0%;
-    animation: 2% liderazgoequipo forwards;
-}
-@keyframes liderazgoequipo{
-    0%{width: 0%;}
-    100%{width: 80%;}
-}
-
-.skills .skill .disciplina{
-    width: 0%;
-    animation: 2% disciplina forwards;
-}
-@keyframes disciplina{
-    0%{width: 0%;}
-    100%{width: 90%;}
-}
-
-.skills .skill .resolucionproblema{
-    width: 0%;
-    animation: 2% resolucionproblema forwards;
-}
-@keyframes resolucionproblema{
-    0%{width: 0%;}
-    100%{width: 80%;}
+.about__tag {
+    display: inline-block;
+    margin-top: 20px;
+    padding: .75rem 1.5rem;
+    background-color: var(--colorNegroClaro);
+    box-shadow: 0px 10px 10px  black;
+    cursor: pointer;
 }
 
 /** CURICULUM - SECTION**/
 .curriculum{
     background-color: var(--colorNegroClaro);
     color: var(--colorBlanco);
-    padding: 50px 20px;
+    padding: 80px 20px;
 }
 .curriculum .contenido__section{
     max-width: 1100px;
@@ -617,7 +479,7 @@ html{
 .portafolio{
     background-color: var(--negroClaro);
     color: var(--colorBlanco);
-    padding: 50px 20px;
+    padding: 80px 20px;
 }
 .portafolio .contenido__section{
     max-width: 1100px;
@@ -645,6 +507,8 @@ html{
 .portafolio .galeria .proyecto img{
     width: 100%;
     display: block;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px  black;
 }
 .portafolio .galeria .proyecto .overlay{
     position: absolute;
@@ -660,6 +524,7 @@ html{
     font-size: 18px;
     letter-spacing: 3px;
     opacity: 0;
+    border-radius: 10px;
 }
 .portafolio .galeria .proyecto .overlay h3{
     margin-bottom: 20px;
@@ -672,12 +537,45 @@ html{
     margin-bottom: 0px;
 }
 
+.projects__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 1rem;
+}
+
+.projects__inner h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.projects__button {
+    background-color: var(--colorNegroClaro);
+    color: var(--colorBlanco);
+    padding: .75rem 1.5rem;
+    width: 45%;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 10px 10px  black;
+    cursor: pointer;
+    
+}
+
+.btn:hover{
+    background-color: var(--colorGris);
+    transition: background-color .5s;
+}
+
 /* CONTACTO SECTION */
 .contacto{
     background-image: url(/images/contact_bg.png);
     background-color: var(--colorNegroClaro);
     color: var(--colorBlanco);
-    padding: 50px 0;
+    padding: 80px 0;
 }
 .contacto .contenido__section{
     max-width:1100px;
@@ -836,16 +734,17 @@ footer .arriba{
         width: fit-content;
     }
     /* Habilidades */
-    .skills .fila{
+    .skills {
         display: block;
     }
-    .skills .fila .col{
+    .skills .about__skills{
         width: 100%;
     }
-    .skills .fila .col .barra__skills{
+    .skills .about__cards .about__card{
         width: 100%;
     }
-    /* Curriculum */
+
+    /* CURRICULUM SECTION */
     .curriculum .fila{
         display: block;
     }
