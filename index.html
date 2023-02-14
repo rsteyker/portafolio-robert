@@ -431,51 +431,56 @@
     <section id="contacto" class="contacto">
         <div class="contenido__section">
             <h2>CONTACTO</h2>
-            <form  id="form">
-                <div class="fila">
-                    <!--Formulario-->
-                        <div class="col">
+            <div class="fila">
+                <!--Formulario-->
+                    <div class="col">
+                        <form id="form" action="#" method="POST" >
                             <label for="nombre"></label>
                             <input type="text" name="nombre"id="nombre" placeholder="Tú Nombre">
                             
-                            <label for="numero"></label>
-                            <input type="number" name="numero" id="numero" placeholder="Número telefónico">
+                            <!-- <label for="numero"></label>
+                            <input type="number" name="numero" id="numero" placeholder="Número telefónico"> -->
                             
-                            <label for="email"></label>
-                            <input href="mailto:rmarchino95@gmail.com" type="email" name="email" id="email" placeholder="Dirección de correo">
+                            <label for="text"></label>
+                            <input type="text" name="subject" id="subject" placeholder="Asunto">
                             
-                            <label for="tema"></label>
-                            <input type="text" name="tema" id="tema" placeholder="Tema">
+                            <!-- <label for="tema"></label>
+                            <input type="text" name="tema" id="tema" placeholder="Tema"> -->
                             
-                            <label for="mensaje"></label>
-                            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                            <label for="message"></label>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Mnsaje"></textarea>
+                            
                             <button type="submit">
                                 Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
                                 <span class="overlay"></span>
                             </button>
-                        </div>
-                    <!--Mapa--> 
-                    <div class="col">
-                        <img src="images/ubicacion2.png" alt="Ubicación">
-                        <div class="info">
-                            <ul>
-                                <li>
-                                    <i class="fa-solid fa-location-dot"></i>
-                                    Perú - Lima, San Juan de Miraflores
-                                </li>
-                                <li>
-                                    <i class="fa-solid fa-mobile-screen"></i>
-                                    Llamanos: +51 972487645
-                                </li>
-                                <li>
-                                    <i class="fa-solid fa-envelope"></i>
-                                    Email: rmarchino95@gmail.com
-                                </li>
-                            </ul>
-                        </div>
+                        </form>
+                    </div>
+                <!--Mapa--> 
+                <div class="col">
+                    <img src="images/ubicacion2.png" alt="Ubicación">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Perú - Lima, San Juan de Miraflores</span> 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                <span>
+                                    <a class="contacto__redes" href="tel:972487645">+51 972487645</a>
+                                </span> 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>
+                                    <a class="contacto__redes" id="mail" href="mailto:rmarchino95@gmail.com">Email: rmarchino95@gmail.com</a>
+                                </span> 
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </form>
+            </div>
         </div>
     </section>
 

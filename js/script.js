@@ -18,13 +18,14 @@ function seleccinar(){
 }
 
 // Formulario Contacto
-const formulario = document.querySelector('#form');
-const sendForm = document.querySelector('#email');
+    const formulario = document.querySelector('#form')
+    const sendForm = document.querySelector('#mail')
 
-formulario.addEventListener('submit', handleSubmit);
+    formulario.addEventListener('submit', handleSubmit)
 
 function handleSubmit(e) {
-    e.preventDefault();
-    const form = new FormData(this);
-    sendForm.setAtribute('href', `mailto:rmarchino95@gmail.com?name=${form.get('name')} - ${form.get('numero')}`)
+    e.preventDefault()
+    const form = new FormData(this)
+    sendForm.setAttribute('href', `mailto:rmarchino95@gmail.com?subject=${form.get('name')} - ${form.get('subject')}&body=${form.get('message')}`)
+    sendForm.click()
 }

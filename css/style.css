@@ -641,7 +641,7 @@ html{
     top: 40%;
     background-color: var(--colorGris);
     padding: 20px;
-    width: 400px;
+    width: 350px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -655,6 +655,11 @@ html{
     color: var(--colorAmarillo);
     display: inline-block;
     margin-right: 20px;
+}
+
+.contacto__redes{
+    color: var(--colorBlanco);
+    text-decoration: none;
 }
 
 /* FOOTER */

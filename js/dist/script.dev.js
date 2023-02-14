@@ -20,12 +20,13 @@ function seleccinar() {
 
 
 var formulario = document.querySelector('#form');
-var sendForm = document.querySelector('#email');
+var sendForm = document.querySelector('#mail');
 formulario.addEventListener('submit', handleSubmit);
 
 function handleSubmit(e) {
   e.preventDefault();
   var form = new FormData(this);
-  sendForm.setAtribute('href', "mailto:rmarchino95@gmail.com?name=".concat(form.get('name'), " - ").concat(form.get('numero')));
+  sendForm.setAttribute('href', "mailto:rmarchino95@gmail.com?subject=".concat(form.get('name'), " - ").concat(form.get('subject'), "&body=").concat(form.get('message')));
+  sendForm.click();
 }
 //# sourceMappingURL=script.dev.js.map
