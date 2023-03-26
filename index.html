@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="images/programacion.png">
-    <title>Portfolio - Robert</title>
+    <title>Robert Steyker Marchino</title>
     <!--CSS STYLE-->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -20,12 +20,12 @@
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio" onclick="seleccinar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccinar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccinar()">HABILIDADES</a></li>
+                    <li><a href="#inicio" onclick="seleccinar()" class="home">HOME</a></li>
+                    <li><a href="#sobremi" onclick="seleccinar()">ABOUT</a></li>
+                    <li><a href="#skills" onclick="seleccinar()">SERVICES</a></li>
                     <li><a href="#curriculum" onclick="seleccinar()">CURRICULUM</a></li>
-                    <li><a href="#portafolio" onclick="seleccinar()">PORTAFOLIO</a></li>
-                    <li><a href="#contacto" onclick="seleccinar()">CONTACTO</a></li>
+                    <li><a href="#portafolio" onclick="seleccinar()">PROJECTS</a></li>
+                    <li><a href="#contacto" onclick="seleccinar()">CONTACT</a></li>
                 </ul>
             </nav>
             <div class="nav__responsive" onclick="mostrarOcultarMenu()">
@@ -40,23 +40,27 @@
             <div class="contenido__imagen">
                 <img src="images/logo/perfil.png" alt="Mi perfil">
             </div>
-            <h1>Robert Marchino</h1>
             <h2>Ingeniero de Sistemas - Experto en Front End Developer</h2>
             <div class="redes">
                 <a href="https://www.linkedin.com/in/robert-marchino-l%C3%B3pez-04916910b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://www.facebook.com/RMARCHINO95/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
                 <a href="https://api.whatsapp.com/send?phone=+51972487645&text=Hola, Nececito%20más%20información%20quiero%20comunicarme%20con un asesor!" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                 <a href="https://github.com/rsteyker" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-                <!-- <a href="#"><i class="fa-solid fa-square-rss"></i></a> -->
             </div>
+        </div>
+        <div class="info-personal">
+            <p class="welcome">Welcome</p>
+            <h1 class="presentacion">I am <span>Robert Marchino</span> , Web Developer</h1>
+            <h3 class="tecnologias">HTML || CSS || Bootstrap || Tailwind || JavaScript || PHP || React || Redux || Node || SQL Server || MySQL || Mongo DB || SCRUM || Notion</h3>
+            <a class="button" href="#contacto" type="submit">Contactar</a>
         </div>
     </section>
 
     <!--SECTION SOBRE MÍ-->
     <section id="sobremi" class="sobremi">
         <div class="contenido__section">
-            <h2>SOBRE MÍ</h2>
-            <p><span>Hola, soy Robert Marchino.</span> Estudiante de la carrera de Ingeniería de Sistemas e Informática de la Universidad Autónoma del Perú, perteneciente aldécimo superior; con conocimientos sólidos en Marketing Digital, Matemática, Estadística, análisis de Datos, con habilidades en programación (Java Script, PHP, Python y React, etc.) y Maquetación utilizando lenguajes de marcado HTML5, CSS3 y Bootstrap. Manejo de base de datos (SQL SERVER), con gran interés de aprender y desarrollar mi carrera profesional en el área de Desarrollo Web y Análisis de Datos. Con gran aspiración de liderar proyectos Innovadores de Desarrollo Web Full-stack y Analítica.</p>
+            <h2>ABOUT</h2>
+            <p><span>Hi I am Robert Marchino.</span> Student of the Systems Engineering and Computer Science career of the Autonomous University of Peru, belonging to the top tenth, with solid knowledge in Digital Marketing, Mathematics, Statistics, Data analysis, with programming skills: HTML, Javascript, CSS3, React, Node.js, PHP, Python, Tailwind, Bootstrap, and Sass style processors. Database management specialist (SQL SERVER, MySQL), with great interest in learning and developing my professional career in the area of ​​Full-stack Web Development.</p>
             <div class="fila">
                 <!--Datos personales-->
                 <div class="col">
@@ -134,55 +138,65 @@
     <section class="skills" id="skills">
         <div class="contenido__section">
             <!-- Habilidades informáticos -->
-            <h2>HABILIDADES</h2>
+            <h2>MY SERVICES</h2>
             <div class="about__skills">
                 <div class="about__cards">
                     <!-- Card 1 -->
                     <div class="about__card">
                         <i class="fa-brands fa-html5"></i>
                         <h3 class="about__card-title">HTML5</h3>
-                        <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque laborum, quos vitae non enim sunt.</P>
+                        <P>Diseñamos una estructura básica y un código (denominado HTML) para la definición de contenido de una página web.</P>
                     </div>
                     <!-- Card 2 -->
                     <div class="about__card">
                         <i class="fa-brands fa-css3-alt"></i>
                         <h3 class="about__card-title">CSS3</h3>
-                        <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque laborum, quos vitae non enim sunt.</P>
+                        <P>Establecemos el diseño visual de los documentos web e interfaces de usuario escritas en HTML.</P>
                     </div>
                     <!-- Card 3 -->
                     <div class="about__card">
                         <i class="fa-brands fa-square-js"></i>
                         <h3 class="about__card-title">Javascript</h3>
-                        <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque laborum, quos vitae non enim sunt.</P>
+                        <P>Desarrollamos páginas web interactivas. Mostrando animaciones y mapas interactivos, para mejorar la experiencia del usuario de un sitio web.</P>
                     </div>
                     <!-- Card 4 -->
                     <div class="about__card">
                         <i class="fa-brands fa-php"></i>
                         <h3 class="about__card-title">PHP</h3>
-                        <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque laborum, quos vitae non enim sunt.</P>
+                        <P>Desarrollamos scripts del lado del servidor, por lo que se puede hacer cualquier cosa que pueda hacer otro programa CGI, como recopilar datos de formularios, generar páginas con contenidos dinámicos, o enviar y recibir cookies.</P>
                     </div>
                     <!-- Card 5 -->
                     <div class="about__card">
                         <i class="fa-brands fa-react"></i>
                         <h3 class="about__card-title">React</h3>
-                        <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque laborum, quos vitae non enim sunt.</P>
+                        <P>Creamos interfaces de usuario interactivas de forma sencilla. Diseñamos vistas simples para cada estado en tu aplicación, y nos encargamos de actualizar y renderizar de manera eficiente los componentes correctos cuando los datos cambien.</P>
                     </div>
                     <!-- Card 6 -->
                     <div class="about__card">
                         <i class="fa-brands fa-bootstrap"></i>
                         <h3 class="about__card-title">Bootstrap</h3>
-                        <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque laborum, quos vitae non enim sunt.</P>
+                        <P>Creamos una interfaz web, a través de lenguajes de programación como HTML, CSS o JavaScript; los cuales permiten adaptar el contenido de la web a los diferentes tipos de pantallas (diseño responsive) y mejorando, por tanto, la experiencia de usuario.</P>
                     </div>
                     <!-- Card 7 -->
                     <div class="about__card">
-                        <i class="fa-brands fa-python"></i>
-                        <h3 class="about__card-title">Python</h3>
-                        <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque laborum, quos vitae non enim sunt.</P>
+                        <i class="fa-solid fa-file-code"></i>
+                        <h3 class="about__card-title">Tailwind</h3>
+                        <P>Utilizamos las tecnología más completas para dar el estilado y responsividad perfecto a su pagina web o aplicación web.</P>
+                    </div>
+                    <div class="about__card">
+                        <i class="fa-solid fa-database"></i>
+                        <h3 class="about__card-title">SQL SERVER</h3>
+                        <P>Analizamos tus datos a travéz de consultas avanzadas en el campo de de la consultoría y analítica.</P>
+                    </div>
+                    <div class="about__card">
+                        <i class="fa-solid fa-database"></i>
+                        <h3 class="about__card-title">MySQL</h3>
+                        <P>Desarrollamos bases de datos relacionales para su página web analizando sus requerimientos propuestos.</P>
                     </div>
                 </div>
                 <!-- Habilidades Blandas -->
                 <div class="about__tags">
-                    <h3 class="about__tags-title">Habilidades Blandas</h3>
+                    <h3 class="about__tags-title">SOFT SKILLS</h3>
                     <div class="about__tags-container">
                         <span class="about__tag">Comunicación</span>
                         <span class="about__tag">Trabajo en Equipo</span>
@@ -283,19 +297,19 @@
                         <h4>Desarrollador Web Full-Stack (junior)</h4>
                         <span class="casa">LUTEM FIRST CAPITAL</span>
                         <span class="fecha">dic. 2021 - Actualuidad</span>
-                        <p>- Responsable de organizar las ideas del Backoffice para producir maquetas/prototipos de diseño usando Adobe XD, Adobe Photoshop y Adobe Illustrator, mejorando la experiencia del usuario, mejorando la interacción del sitio web</p><br>
-                        <p>- Desarrollo del sistema web con PHP, Javascript, AJAX y Maquetación utilizando lenguajes de marcado (HTML5, CSS3 y Bootstrap con patrones de diseño de MVC para realizar operaciones de compra y venta de tipo de cambio.</p> <br>
-                        <p>- Encargado de capacitar los personales de la empresa en el uso adecuado de las herramientas del sistema web tras el despliegue de los proyectos, llevando a cabo reuniones con el fin de garantizar el correcto uso del sistema y maximizar la productividad.</p> <br>
-                        <p>- Responsable de la implementación del base de datos utilizando el gestor de base de datos MySQL, y el editor MySQL Workbench (casos de uso del negocio, Diagramas de entidad relación modelo conceptual, lógico y físico), para el sistema web.</p>
+                        <p>Responsable del desarrollo del sistema web con HTML, PHP, Javascript y Bootstrap. Empleando la arquitectura de patrones de diseño de MVC para optimizar las operaciones de compra y venta de tipo de cambio y además almacenar las operaciones diarias en una base de datos.</p><br>
+                        <p>Encargado de capacitar los Trader en el uso adecuado de las herramientas del sistema web tras el despliegue de los proyectos, llevando a cabo reuniones con el fin de garantizar el correcto uso del sistema y maximizar la productividad.</p> <br>
+                        <p>Responsable en la creación de la base de datos utilizando el gestor de base de datos MySQL y el editor MySQL Workbench. </p> <br>
                         <div class="conectorder">
                             <div class="circuloder"></div>
                         </div>
                     </div>
                     <div class="item der">
-                        <h4>Analista de Datos</h4>
+                        <h4>Analista de Datos Junior <strong>(Proyectos)</strong></h4>
                         <span class="casa">LUTEM FIRST CAPITAL</span>
                         <span class="fecha">jul. 2021 - nov. 2021</span>
-                        <p>Desarrollo de dashboard gerencial con Power BI y Excel, para el monitoreo de utilidades de los traders.</p>
+                        <p>Desarrollo de dashboard gerencial con Power BI y Excel, para el monitoreo de utilidades de los traders.</p> <br>
+                        <p>Desarrollo de la automatización de tareas de los traders con Macros.</p>
                         <div class="conectorder">
                             <div class="circuloder"></div>
                         </div>
@@ -308,118 +322,112 @@
     <!--SECCTION PORTAFOLIO-->
     <section id="portafolio" class="portafolio">
         <div class="contenido__section">
-            <h2>PROYECTOS</h2>
+            <h2>PROYECTS</h2>
             <div class="galeria">
                 <div class="projects__inner">
-                    <h3>Proyecto 1</h3>
                     <div class="proyecto">
-                        <img loading="lazy" src="images/portafolio/web-design.jpg" alt="Diseño web">
+                        <img loading="lazy" src="images/portafolio/img-1.png" alt="imagen-1">
                         <div class="overlay">
-                            <h3>Diseño Web</h3>
-                            <p>Maquetación</p>
+                            <h3>Tu casa en el Bosque</h3>
+                            <p>Maquetación y estilado</p>
                         </div>
                     </div>
                     <div class="projects__buttons">
-                        <button class="btn projects__button" type="button">
-                            VER DEMO
+                        <button class="projects__button" type="button">
+                            <a href="https://house-in-forest-website-aplication.netlify.app" target="_blank">VER DEMO</a>
                         </button>
-                        <button class="btn projects__button" type="button">
-                            VER CÓDIGO
+                        <button class="projects__button" type="button">
+                            <a href="https://github.com/rsteyker/Tu-casa-en-el-bosque" target="_blank">VER CÓDIGO</a>
                         </button>
                     </div>
                 </div>
                 <!-- Projecto 2 -->
                 <div class="projects__inner">
-                    <h3>Proyecto 2</h3>
                     <div class="proyecto">
-                        <img loading="lazy" src="images/portafolio/desarrolloWeb.jpg" alt="Diseño web">
+                        <img loading="lazy" src="images/portafolio/img-2.png" alt="imagen-2">
                         <div class="overlay">
-                            <h3>Desarrollo Web</h3>
-                            <p>Full-Stack</p>
+                            <h3>SoundMusic</h3>
+                            <p>Maquetación y estilado</p>
                         </div>
                     </div>
                     <div class="projects__buttons">
-                        <button class="btn projects__button" type="button">
-                            VER DEMO
+                        <button class="projects__button" type="button">
+                            <a href="https://sound-music-web-aplication.netlify.app" target="_blank">VER DEMO</a>
                         </button>
-                        <button class="btn projects__button" type="button">
-                            VER CÓDIGO
+                        <button class="projects__button" type="button">
+                            <a href="https://github.com/rsteyker/soundmusic" target="_blank">VER CÓDIGO</a>
                         </button>
                     </div>
                 </div>
                 
                 <div class="projects__inner">
-                    <h3>Projecto 3</h3>
                     <div class="proyecto">
-                        <img loading="lazy" src="images/portafolio/basedeDatos.jpeg" alt="Diseño web">
+                        <img loading="lazy" src="images/portafolio/img-3.png" alt="imagen-3">
                         <div class="overlay">
-                            <h3>Bases de Datos</h3>
-                            <p>Creación de Base de Datos</p>
+                            <h3>Meeti</h3>
+                            <p>Maquetación y estilado</p>
                         </div>
                     </div>
                     <div class="projects__buttons">
-                        <button class="btn projects__button" type="button">
-                            VER DEMO
+                        <button class="projects__button" type="button">
+                            <a href="https://meeti-web-aplication.netlify.app" target="_blank">VER DEMO</a>
                         </button>
-                        <button class="btn projects__button" type="button">
-                            VER CÓDIGO
+                        <button class="projects__button" type="button">
+                            <a href="https://github.com/rsteyker/meeti" target="_blank">VER CÓDIGO</a>
                         </button>
                     </div>
                 </div>
 
                 <div class="projects__inner">
-                    <h3>Projecto 4</h3>
                     <div class="proyecto">
-                        <img loading="lazy" src="images/portafolio/seo.jpg" alt="Diseño web">
+                        <img loading="lazy" src="images/portafolio/img-4.png" alt="imagen 4">
                         <div class="overlay">
-                            <h3>SEO</h3>
-                            <p>Posicionamiento en la Búsqueda</p>
+                            <h3>Administrar Productos</h3>
+                            <p>Maquetación y estilada desarrollada con React</p>
                         </div>
                     </div>
                     <div class="projects__buttons">
-                        <button class="btn projects__button" type="button">
-                            VER DEMO
+                        <button class="projects__button" type="button">
+                            <a href="https://administrar-products-react.netlify.app" target="_blank">VER DEMO</a>
                         </button>
-                        <button class="btn projects__button" type="button">
-                            VER CÓDIGO
+                        <button class="projects__button" type="button">
+                            <a href="https://github.com/rsteyker/administrar-products-react" target="_blank">VER CÓDIGO</a>
                         </button>
                     </div>
                 </div>
 
                 <div class="projects__inner">
-                    <h3>Projecto 5</h3>
                     <div class="proyecto">
-                        <img loading="lazy" src="images/portafolio/analisisDatos.png" alt="Diseño web">
+                        <img loading="lazy" src="images/portafolio/img-5.png" alt="imagen-5">
                         <div class="overlay">
-                            <h3>Analisis de Datos</h3>
-                            <p>Power BI y Tableau</p>
+                            <h3>Aplicación Clima</h3>
+                            <p>Maquetación y estilada desarrollada con React</p>
                         </div>
                     </div>
                     <div class="projects__buttons">
-                        <button class="btn projects__button" type="button">
-                            VER DEMO
+                        <button class="projects__button" type="button">
+                            <a href="https://aplication-clima-react.netlify.app" target="_blank">VER DEMO</a>
                         </button>
-                        <button class="btn projects__button" type="button">
-                            VER CÓDIGO
+                        <button class="projects__button" type="button">
+                            <a href="https://github.com/rsteyker/app-clima-react" target="_blank">VER CÓDIGO</a>
                         </button>
                     </div>
                 </div>
 
                 <div class="projects__inner">
-                    <h3>Projecto 6</h3>
                     <div class="proyecto">
-                        <img loading="lazy" src="images/portafolio/dashboard.jpeg" alt="Diseño web">
+                        <img loading="lazy" src="images/portafolio/img-6.png" alt="imagen-6">
                         <div class="overlay">
-                            <h3>Dashboard</h3>
-                            <p>Creación de Dashboard</p>
+                            <h3>Aprendo en Línea</h3>
+                            <p>Maquetación y estilada desarrollada con React</p>
                         </div>
                     </div>
                     <div class="projects__buttons">
-                        <button class="btn projects__button" type="button">
-                            VER DEMO
+                        <button class="projects__button" type="button">
+                            <a href="https://carrito-de-compras-cursos-en-linea.netlify.app" target="_blank">VER DEMO</a>
                         </button>
-                        <button class="btn projects__button" type="button">
-                            VER CÓDIGO
+                        <button class="projects__button" type="button">
+                            <a href="https://github.com/rsteyker/Aprendo-en-linea" target="_blank">VER CÓDIGO</a>
                         </button>
                     </div>
                 </div>
@@ -430,7 +438,7 @@
     <!--CONTACTO SECTION-->
     <section id="contacto" class="contacto">
         <div class="contenido__section">
-            <h2>CONTACTO</h2>
+            <h2>CONTACT</h2>
             <div class="fila">
                 <!--Formulario-->
                     <div class="col">
