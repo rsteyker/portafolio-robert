@@ -577,7 +577,7 @@ html{
     font-family: var(--fuenteLogo);
     text-align: center;
     padding: 20px 0;
-    color: var(--colorBlanco);
+    color: var(--colorAmarillo);
 }
 .portafolio .galeria{
     display: flex;
